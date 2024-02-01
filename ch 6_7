@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int a, b, c;
+	cout << "試輸入a邊長" << endl;
+	cin >> a;
+	cout << "試輸入b邊長" << endl;
+	cin >> b;
+	cout << "試輸入c邊長" << endl;
+	cin >> c;
+
+	if ((a + b) > c || (a + c) > b || (b + c) > a) {
+		cout << "是個三角形";
+	}
+	return 0;
+}
