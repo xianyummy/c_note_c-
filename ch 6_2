@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int num;
+
+	cout << "請輸入一個整數";
+	cin >> num;
+
+	if (num > 0) {
+		cout << "您輸入的整數大於零";
+	}
+	else if(num > 0){
+		cout << "您輸入的整數小於零";
+	}
+	else {
+		cout << "您輸入的整數等於零";
+	}
+
+	cout << "程式結束";
+	return 0;
+}
