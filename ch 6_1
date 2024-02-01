@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	char ch;
+
+	cout << "輸入一個字元";
+	cin >> ch;
+
+	if (ch >= 48 && ch <= 57) {
+		cout << "此字元是數字";
+	}
+	if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {
+		cout << "此字元為英文字母";
+	}
+	return 0;
+}
