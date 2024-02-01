@@ -1,0 +1,20 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int weight;
+	int height;
+	cout << "請輸入你的體重";
+	cin >> weight;
+	cout << "請輸入你的身高";
+	cin >> height;
+
+	if (weight > 90 && height < 180) {
+		cout << "體重過重";
+	}
+	else {
+		cout << "不會過重";
+	}
+	return 0;
+}
