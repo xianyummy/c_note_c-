@@ -1,0 +1,27 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int month;
+
+	cout << "輸入月份";
+	cin >> month;
+
+	if (month >= 3 && month <= 5) {
+		cout << "屬於春季";
+	}
+	else if (month >= 6 && month <= 8) {
+		cout << "屬於夏季";
+	}
+	else if (month >= 9 && month <= 11) {
+		cout << "屬於秋季";
+	}
+	else if (month == 12 || month == 1 || month == 2) {
+		cout << "屬於冬季";
+	}
+	else {
+		cout << "不屬於地球的月份";
+	}
+	return 0;
+}
