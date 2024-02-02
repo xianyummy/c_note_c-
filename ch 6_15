@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int year;
+
+	cout << "輸入西元年: ";
+	cin >> year;
+
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 4000 != 0)) {
+		cout << "西元" << year << "年為閏年";
+	}
+	else {
+		cout << "西元" << year << "年為平年";
+	}
+	return 0;
+}
