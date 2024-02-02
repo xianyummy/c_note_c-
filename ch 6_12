@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int score;
+
+	cout << "輸入學生成績: ";
+	cin >> score;
+
+	if (score <= 100 && score >= 80) {
+		cout << "評等: " << "A";
+	}
+	else if (score <= 79 && score >= 60) {
+		cout << "評等: B";
+	}
+	else if (score <= 59 && score >= 0) {
+		cout << "評等: C";
+	}
+	else {
+		cout << "成績輸入有誤";
+	}
+	return 0;
+}
