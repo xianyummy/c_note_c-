@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main() {
+	int w;
+
+	cout << "輸入整體重量";
+	cin >> w;
+
+	w > 90 ? (cout << "體重過重") : (cout << "不會過重");
+
+
+	return 0;
+}
