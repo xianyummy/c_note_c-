@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	int a, b, c;
+	cout << "試輸入a邊長" << endl;
+	cin >> a;
+	cout << "試輸入b邊長" << endl;
+	cin >> b;
+	cout << "試輸入c邊長" << endl;
+	cin >> c;
+
+	if (((a + b) > c) && ((a + c) > b) && ((b + c) > a)) {
+		if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+			cout << a << " " << b << " " << c << "可以組成三角形";
+		}
+		else if (a * a + b * b < c * c || b * b + c * c < a * a || a * a + c * c < b * b) {
+			cout << a << " " << b << " " << c << "可以組成銳角三角形";
+		}
+		else {
+			cout << a << " " << b << " " << c << "可以組成銳角三角形";
+		}
+	}
+	else {
+		cout << a << " " << b << " " << c << "不能組成三角形";
+	}
+	return 0;
+}
