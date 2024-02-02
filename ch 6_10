@@ -1,0 +1,28 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	float x, y;
+
+	cout << "分別輸入x及y座標";
+	cin >> x;
+	cin >> y;
+
+	if (x > 0 && y > 0) {
+		cout << "第一象限";
+	}
+	else if (x < 0 && y>0) {
+		cout << "第二象限";
+	}
+	else if (x < 0 && y < 0) {
+		cout << "第三象限";
+	}
+	else if (x > 0 && y < 0) {
+		cout << "第四象限";
+	}
+	else {
+		cout << "不屬於任何象限";
+	}
+	return 0;
+}
