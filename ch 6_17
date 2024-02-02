@@ -1,0 +1,32 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main() {
+	double judge, x, mx;
+	double a, b, c;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	judge = pow(b, 2) - 4 * a * c;
+
+	if (judge > 0) {
+		x = (-b + sqrt(judge)) / (2 * a);
+		mx = (-b - sqrt(judge)) / (2 * a);
+
+		cout << "方程式有兩個實根 x = " << x << " " << mx;
+	}
+	else if (judge == 0) {
+		x = -b / (2 * a);
+
+		cout << "方程式有兩個相同的實根 x = " << x;
+	}
+	else {
+		cout << "沒有實根";
+	}
+
+
+	return 0;
+}
