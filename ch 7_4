@@ -1,0 +1,13 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int i;
+
+	for (i = ')'; i <= '@'; i++) {
+		cout << "ASCII第" << i << "碼的字元為" << static_cast<char> (i) << endl;
+	}
+	return 0;
+}
