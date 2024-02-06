@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int i;
+
+	cout << "1到100間能被6整除的數有: ";
+
+	for (i = 1; i <= 100; i++) {
+		if (i % 6 == 0) {
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+	return 0;
+}
