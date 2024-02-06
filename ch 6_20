@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int num;
+
+	cout << "輸入1~4的數字: ";
+	cin >> num;
+
+	switch (num) {
+	case 1:
+		cout << "春天";
+		break;
+	case 2:
+		cout << "夏天";
+		break;
+	case 3:
+		cout << "秋天";
+		break;
+	case 4:
+		cout << "冬天";
+		break;
+	default:
+		cout << "輸入錯誤";
+	}
+	return 0;
+}
