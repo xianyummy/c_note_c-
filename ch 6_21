@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	char ch;
+
+	cout << "輸入一個字元 a 或 b";
+	cout << endl;
+	cin >> ch;
+	switch (ch) {
+	case 'a':
+		cout << "您輸入的是" << ch;
+		break;
+	case 'b':
+		cout << "您輸入的是" << ch;
+		break;
+	default:
+		cout << "您輸入的不是a也不是b";
+	}
+	return 0;
+}
