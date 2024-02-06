@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int w, h;
+
+	cout << "輸入身高及體重(整數)";
+	cin >> h;
+	cin >> w;
+
+	w > 90 && h < 180 ? (cout << "體重過重") : (cout << "不會過重");
+	
+	return 0;
+}
