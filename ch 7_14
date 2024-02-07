@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int line = 3000, day = 0;
+
+	while (line > 5) {
+		line /= 2;
+		day += 1;
+	}
+
+	cout << "需要" << day + 1 << "天";
+	return 0;
+}
