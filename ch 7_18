@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int i = 1, sum = 0;
+
+	while (i <= 10) {
+		sum += i * i;
+		cout << i * i << " ";
+		i++;
+	}
+
+	cout << "1~10間各個數字的平方和 = " << sum;
+
+	return 0;
+}
