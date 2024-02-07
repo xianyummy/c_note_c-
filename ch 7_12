@@ -1,0 +1,27 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int i, j, n1, n2, n3;
+
+	cout << "從100~999間的所有 armstrong數有: ";
+
+	for (i = 100; i <= 999; i++) {
+		j = i;
+		n1 = j / 100;
+		j -= n1 * 100;
+		n2 = j / 10;
+		j -= n2 * 10;
+		n3 = j;
+
+
+		if (i == n1 * n1 + n2 * n2 + n3 * n3) {
+			cout << i << " ";
+		}
+	}
+
+	cout << endl;
+	return 0;
+}
