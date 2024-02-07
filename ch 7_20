@@ -1,0 +1,26 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int n = 0, i = 0, j = 0;
+
+	do {
+		do {
+			cout << "輸入一個介在1~50間的整數";
+			cin >> n;
+		} while (n < 1 || n > 50);
+
+		j = 0;
+		do {
+			cout << "*";
+			j++;
+		} while (j != n);
+		i++;
+		cout << endl;
+	} while (i < 3);
+
+
+	return 0;
+}
