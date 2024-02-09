@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int input;
+	int cnt = 0;
+	int passward = 6128;
+
+	while (1) {
+		cout << "請輸入密碼";
+		cin >> input;
+		
+		cnt++;
+
+		if (input == passward) {
+			cout << "密碼輸入正確";
+			break;
+		}
+
+		if (cnt == 3) {
+			cout << "密碼輸入超過三次!";
+			break;
+		}
+	}
+
+	return 0;
+}
