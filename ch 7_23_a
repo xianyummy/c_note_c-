@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int main() {
+	int n, sum;
+
+	for (n = 1, sum = 0; sum <= 1000; n++) {
+		sum += n;
+	}
+
+	cout << "n = " << n - 1;
+
+	return 0;
+}
