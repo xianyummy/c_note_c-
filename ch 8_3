@@ -1,0 +1,17 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstring>
+#include<fstream>
+using namespace std;
+int cub(int);
+int main() {
+	int k;
+	cout << "請輸入整數";
+	cin >> k;
+	cout << k << "的三次方為" << cub(k);
+	return 0;
+}
+
+int cub(int k) {
+	return k * k * k;
+}
